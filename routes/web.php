@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+// --- front page
+Route::get('/mediacliq/', function () {
+	return view('mediacliq');
+});
+
+// --- URL
+Route::post('convert-url', 'URLController@store');
